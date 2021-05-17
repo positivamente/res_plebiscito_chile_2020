@@ -87,6 +87,7 @@ async function GetComuna() {
     }catch(error){
 	console.log(error);
     }
+    fs.writeFileSync('salida_convencion.json', JSON.stringify(salida));
 }
 
 GetComuna();
